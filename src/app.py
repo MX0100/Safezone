@@ -19,7 +19,7 @@ from models import User, Content, UserSession
 
 
 # 创建数据库
-@app.before_first_request
+@app.before_request
 def create_tables():
     db.create_all()
 
